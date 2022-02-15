@@ -1,0 +1,14 @@
+<hello name="{{ name }}"></hello>
+<p-tabView (onChange)="onTabChanged($event)">
+  <p-tabPanel [header]="view.dashboardViewTypeName" *ngFor="let view of views; let i = index" [selected]="i === 0">      
+  </p-tabPanel>
+</p-tabView>
+<ng-container >
+  
+  Hello
+</ng-container>
+
+
+<p-button type="button"
+ label="Click me"
+ (onClick)="onButtonClicked()"></p-button>
